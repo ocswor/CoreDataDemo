@@ -1,13 +1,13 @@
 //
-//  Employee+CoreDataClass.m
+//  Department+CoreDataClass.m
 //  CoreDateDemo
 //
 //  Created by 扆佳梁 on 2016/10/11.
 //  Copyright © 2016年 Eric. All rights reserved.
 //
 
-#import "Employee+CoreDataClass.h"
 #import "Department+CoreDataClass.h"
-@implementation Employee
+
+@implementation Department
 
 @end

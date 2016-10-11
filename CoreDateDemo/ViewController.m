@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "Employee+CoreDataProperties.h"
 #import "Employee+CoreDataClass.h"
+#import "Department+CoreDataClass.h"
+#import "Department+CoreDataProperties.h"
 
 @interface ViewController ()
 
@@ -93,26 +95,55 @@
 }
 
 #pragma mark - 添加 数据
+
+
+
+#pragma mark 多表数据 修改
+
+/**
+ 添加员工信息  多表数据 添加 一次添加两个表的数据de
+
+ @param sender 按钮
+ */
 - (IBAction)addEmployee:(id)sender {
     
     //创建员工
-    Employee *employee = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
+    //添加 张三 属于ios部门
+    //添加 李四 属于 android 部门
+    
+    Employee *employee1 = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
     
     //设置员工属性
     
-    employee.name = @"王五";
-    employee.age = 28;
-    employee.height = 1.70;
+    employee1.name = @"张三";
+    employee1.age = 28;
+    employee1.height = 1.70;
+    //创建一个部门
+    Department *depios = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:_context];
+    depios.name = @"ios";
+    depios.createDate = [NSDate date];
+    depios.departNo = @"001";
+    employee1.depart = depios;
     
-    //保存 通过上下文
-    NSError *error = nil;
-    [_context save:&error];
-    if (!error) {
-        NSLog(@"Insert success");
-    }else{
-        NSLog(@"%@",error);
-    }
     
+    Employee *employee2 = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
+    
+    //设置员工属性
+    
+    employee2.name = @"张三";
+    employee2.age = 28;
+    employee2.height = 1.70;
+    //创建一个部门
+    Department *depAndroid = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:_context];
+    depAndroid.name = @"Android";
+    depAndroid.createDate = [NSDate date];
+    depAndroid.departNo = @"002";
+    employee2.depart = depAndroid;
+    
+    
+    [self synchronizeSqlite];
+    
+
 }
 
 - (IBAction)addMultipleData:(id)sender {
@@ -154,12 +185,37 @@
     if (!error) {
         NSLog(@"emps:%@",emps);
         for (Employee *emp in emps) {
-            NSLog(@"%@ %d %f",emp.name,emp.age,emp.height);
+            NSLog(@"%@ %d %f %@",emp.name,emp.age,emp.height,emp.depart.name);
         }
     }else{
         NSLog(@"%@",error);
     }
 }
+
+
+- (IBAction)multipleTbaleReadSpecialEmployee:(id)sender {
+    //创建 一个请求对象
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Employee"];
+    
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"depart.name=%@",@"ios"];
+    
+    request.predicate = pre;
+    //读取信息
+    NSError *error = nil;
+    NSArray *emps = [self.context executeFetchRequest:request error:&error];
+    
+    if (!error) {
+        NSLog(@"emps:%@",emps);
+        for (Employee *emp in emps) {
+            NSLog(@"%@ %d %f %@",emp.name,emp.age,emp.height,emp.depart.name);
+        }
+    }else{
+        NSLog(@"%@",error);
+    }
+    
+}
+
 
 - (IBAction)readSpecialEmployee:(id)sender {
     //创建 一个请求对象

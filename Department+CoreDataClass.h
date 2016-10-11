@@ -1,5 +1,5 @@
 //
-//  Employee+CoreDataClass.h
+//  Department+CoreDataClass.h
 //  CoreDateDemo
 //
 //  Created by 扆佳梁 on 2016/10/11.
@@ -9,14 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Department;
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Employee : NSManagedObject
+@interface Department : NSManagedObject
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "Employee+CoreDataProperties.h"
+#import "Department+CoreDataProperties.h"

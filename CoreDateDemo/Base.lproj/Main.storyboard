@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spP-1r-ply">
-                                <frame key="frameInset" minX="18" minY="44" width="92" height="30"/>
+                                <frame key="frameInset" minX="16" minY="44" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="添加员工信息"/>
+                                <state key="normal" title="多表添加员工信息"/>
                                 <connections>
                                     <action selector="addEmployee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqs-Ck-kwn"/>
                                 </connections>
@@ -67,14 +67,6 @@
                                     <action selector="deleteEmployee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="weT-bc-8NI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfu-8C-VPs">
-                                <frame key="frameInset" minX="147" minY="44" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="一次添加多条数据"/>
-                                <connections>
-                                    <action selector="addMultipleData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81q-gt-zrM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-7H-Je7">
                                 <frame key="frameInset" minX="18" minY="253" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -89,6 +81,22 @@
                                 <state key="normal" title="模糊查询"/>
                                 <connections>
                                     <action selector="likeSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFT-Qy-Dt1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9g-HH-0OX">
+                                <frame key="frameInset" minX="133" minY="75" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="多表_查询数据"/>
+                                <connections>
+                                    <action selector="multipleTbaleReadSpecialEmployee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vO-bc-3Sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfu-8C-VPs">
+                                <frame key="frameInset" minX="159" minY="44" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="一次添加多条数据"/>
+                                <connections>
+                                    <action selector="addMultipleData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81q-gt-zrM"/>
                                 </connections>
                             </button>
                         </subviews>

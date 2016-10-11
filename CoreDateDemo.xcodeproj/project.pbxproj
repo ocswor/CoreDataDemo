@@ -14,9 +14,11 @@
 		07D70FD31DAC8904002D2A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D70FD21DAC8904002D2A59 /* Assets.xcassets */; };
 		07D70FD61DAC8904002D2A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D70FD41DAC8904002D2A59 /* LaunchScreen.storyboard */; };
 		07D70FE01DAC89A0002D2A59 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07D70FDE1DAC89A0002D2A59 /* Company.xcdatamodeld */; };
-		07D710041DAC8ED8002D2A59 /* Employee+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D710011DAC8ED8002D2A59 /* Employee+CoreDataClass.m */; };
-		07D710051DAC8ED8002D2A59 /* Employee+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D710031DAC8ED8002D2A59 /* Employee+CoreDataProperties.m */; };
 		07D7100D1DACCF0C002D2A59 /* 4BD2EE8E-8D13-410D-9F9A-F1D869E08553.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D7100C1DACCF0C002D2A59 /* 4BD2EE8E-8D13-410D-9F9A-F1D869E08553.png */; };
+		07D710121DACD695002D2A59 /* Department+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7100F1DACD695002D2A59 /* Department+CoreDataClass.m */; };
+		07D710131DACD695002D2A59 /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D710111DACD695002D2A59 /* Department+CoreDataProperties.m */; };
+		07D710181DACD71C002D2A59 /* Employee+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D710151DACD71C002D2A59 /* Employee+CoreDataClass.m */; };
+		07D710191DACD71C002D2A59 /* Employee+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D710171DACD71C002D2A59 /* Employee+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +33,15 @@
 		07D70FD51DAC8904002D2A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07D70FD71DAC8904002D2A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D70FDF1DAC89A0002D2A59 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
-		07D710001DAC8ED8002D2A59 /* Employee+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Employee+CoreDataClass.h"; path = "../Employee+CoreDataClass.h"; sourceTree = "<group>"; };
-		07D710011DAC8ED8002D2A59 /* Employee+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Employee+CoreDataClass.m"; path = "../Employee+CoreDataClass.m"; sourceTree = "<group>"; };
-		07D710021DAC8ED8002D2A59 /* Employee+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Employee+CoreDataProperties.h"; path = "../Employee+CoreDataProperties.h"; sourceTree = "<group>"; };
-		07D710031DAC8ED8002D2A59 /* Employee+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Employee+CoreDataProperties.m"; path = "../Employee+CoreDataProperties.m"; sourceTree = "<group>"; };
 		07D7100C1DACCF0C002D2A59 /* 4BD2EE8E-8D13-410D-9F9A-F1D869E08553.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4BD2EE8E-8D13-410D-9F9A-F1D869E08553.png"; sourceTree = "<group>"; };
+		07D7100E1DACD695002D2A59 /* Department+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Department+CoreDataClass.h"; path = "../Department+CoreDataClass.h"; sourceTree = "<group>"; };
+		07D7100F1DACD695002D2A59 /* Department+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Department+CoreDataClass.m"; path = "../Department+CoreDataClass.m"; sourceTree = "<group>"; };
+		07D710101DACD695002D2A59 /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Department+CoreDataProperties.h"; path = "../Department+CoreDataProperties.h"; sourceTree = "<group>"; };
+		07D710111DACD695002D2A59 /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Department+CoreDataProperties.m"; path = "../Department+CoreDataProperties.m"; sourceTree = "<group>"; };
+		07D710141DACD71C002D2A59 /* Employee+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Employee+CoreDataClass.h"; path = "../Employee+CoreDataClass.h"; sourceTree = "<group>"; };
+		07D710151DACD71C002D2A59 /* Employee+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Employee+CoreDataClass.m"; path = "../Employee+CoreDataClass.m"; sourceTree = "<group>"; };
+		07D710161DACD71C002D2A59 /* Employee+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Employee+CoreDataProperties.h"; path = "../Employee+CoreDataProperties.h"; sourceTree = "<group>"; };
+		07D710171DACD71C002D2A59 /* Employee+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Employee+CoreDataProperties.m"; path = "../Employee+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,14 @@
 		07D70FDD1DAC894F002D2A59 /* CoreDate */ = {
 			isa = PBXGroup;
 			children = (
-				07D710001DAC8ED8002D2A59 /* Employee+CoreDataClass.h */,
-				07D710011DAC8ED8002D2A59 /* Employee+CoreDataClass.m */,
-				07D710021DAC8ED8002D2A59 /* Employee+CoreDataProperties.h */,
-				07D710031DAC8ED8002D2A59 /* Employee+CoreDataProperties.m */,
+				07D710141DACD71C002D2A59 /* Employee+CoreDataClass.h */,
+				07D710151DACD71C002D2A59 /* Employee+CoreDataClass.m */,
+				07D710161DACD71C002D2A59 /* Employee+CoreDataProperties.h */,
+				07D710171DACD71C002D2A59 /* Employee+CoreDataProperties.m */,
+				07D7100E1DACD695002D2A59 /* Department+CoreDataClass.h */,
+				07D7100F1DACD695002D2A59 /* Department+CoreDataClass.m */,
+				07D710101DACD695002D2A59 /* Department+CoreDataProperties.h */,
+				07D710111DACD695002D2A59 /* Department+CoreDataProperties.m */,
 				07D70FDE1DAC89A0002D2A59 /* Company.xcdatamodeld */,
 			);
 			name = CoreDate;
@@ -178,11 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D70FCE1DAC8904002D2A59 /* ViewController.m in Sources */,
+				07D710131DACD695002D2A59 /* Department+CoreDataProperties.m in Sources */,
 				07D70FCB1DAC8904002D2A59 /* AppDelegate.m in Sources */,
+				07D710191DACD71C002D2A59 /* Employee+CoreDataProperties.m in Sources */,
 				07D70FC81DAC8904002D2A59 /* main.m in Sources */,
-				07D710051DAC8ED8002D2A59 /* Employee+CoreDataProperties.m in Sources */,
+				07D710121DACD695002D2A59 /* Department+CoreDataClass.m in Sources */,
 				07D70FE01DAC89A0002D2A59 /* Company.xcdatamodeld in Sources */,
-				07D710041DAC8ED8002D2A59 /* Employee+CoreDataClass.m in Sources */,
+				07D710181DACD71C002D2A59 /* Employee+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
